@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Symmetrical and Asymmetrical Encryption - A comprehensive interactive course">
+    <title>Encryption Basics | Learn Symmetrical & Asymmetrical Encryption</title>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo" data-page="home">
+                <i class="fas fa-lock"></i>
+                <h1>Encryption Basics</h1>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+                    <li><a href="#" class="nav-link" data-page="lessons">Lessons</a></li>
+                    <li><a href="#" class="nav-link" data-page="progress">Progress</a></li>
+                    <li><a href="#" class="nav-link" data-page="certificate">Certificate</a></li>
+                    <li><a href="#" class="nav-link" data-page="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <div class="container">
+            
+            <!-- Home Page -->
+            <section id="home" class="page active">
+                <div class="hero">
+                    <h2>Master Encryption Fundamentals</h2>
+                    <p>Understand the difference between symmetrical and asymmetrical encryption, and learn how they protect your data in the digital world.</p>
+                    <button class="btn" data-page="lessons" style="margin-top: 1.5rem;">
+                        <i class="fas fa-play"></i> Start Learning
+                    </button>
+                </div>
+                
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-key"></i>
+                            <h3>Symmetrical Encryption</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Learn how one shared key can both lock and unlock your data. Discover AES, the gold standard of symmetrical encryption.</p>
+                            <button class="btn btn-outline" data-action="open-lesson" data-lesson="2">Learn More</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-user-lock"></i>
+                            <h3>Asymmetrical Encryption</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Explore the power of public and private key pairs. Understand RSA and how it revolutionized secure communication.</p>
+                            <button class="btn btn-outline" data-action="open-lesson" data-lesson="3">Learn More</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Real-World Security</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>See how HTTPS, messaging apps, and modern systems combine both encryption types to keep you safe online.</p>
+                            <button class="btn btn-outline" data-action="open-lesson" data-lesson="10">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card" style="margin-top: 2rem;">
+                    <div class="card-body" style="text-align: center;">
+                        <h3 style="color: var(--dark-blue); margin-bottom: 1rem;">
+                            <i class="fas fa-graduation-cap"></i> Course Overview
+                        </h3>
+                        <p style="max-width: 700px; margin: 0 auto 1.5rem;">
+                            This comprehensive course covers 10 lessons on encryption fundamentals. Complete all lessons and quizzes to earn your certificate of completion.
+                        </p>
+                        <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                            <div>
+                                <i class="fas fa-book" style="font-size: 2rem; color: var(--teal);"></i>
+                                <p><strong>10 Lessons</strong></p>
+                            </div>
+                            <div>
+                                <i class="fas fa-question-circle" style="font-size: 2rem; color: var(--teal);"></i>
+                                <p><strong>30 Quiz Questions</strong></p>
+                            </div>
+                            <div>
+                                <i class="fas fa-certificate" style="font-size: 2rem; color: var(--teal);"></i>
+                                <p><strong>Certificate</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Lessons Page -->
+            <section id="lessons" class="page">
+                <h2 style="color: var(--dark-blue); margin-bottom: 1.5rem; text-align: center;">
+                    <i class="fas fa-book-open"></i> Course Lessons
+                </h2>
+                <div class="lesson-content">
+                    <!-- Lesson content will be dynamically rendered here -->
+                </div>
+            </section>
+
+            <!-- Progress Page -->
+            <section id="progress" class="page">
+                <div class="progress-tracker">
+                    <h2><i class="fas fa-chart-line"></i> Your Progress</h2>
+                    <div id="progress-cards" class="progress-cards">
+                        <!-- Progress cards will be dynamically rendered here -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certificate Page -->
+            <section id="certificate" class="page">
+                <div class="certificate">
+                    <i class="fas fa-award" style="font-size: 4rem; color: var(--teal); margin-bottom: 1rem;"></i>
+                    <h2>Certificate of Completion</h2>
+                    <p>This is to certify that</p>
+                    <div class="certificate-name" id="user-name">[Your Name]</div>
+                    <p>has successfully completed the</p>
+                    <h3 style="color: var(--dark-blue); margin: 1rem 0;">Encryption Fundamentals Course</h3>
+                    <p>Covering Symmetrical and Asymmetrical Encryption</p>
+                    <p style="margin-top: 2rem; color: #666;">
+                        <i class="fas fa-calendar"></i> Date: <span id="certificate-date"></span>
+                    </p>
+                    <div style="margin-top: 2rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                        <button class="btn" id="print-certificate">
+                            <i class="fas fa-print"></i> Print Certificate
+                        </button>
+                        <button class="btn btn-outline" id="save-certificate">
+                            <i class="fas fa-save"></i> Save Certificate
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Page -->
+            <section id="contact" class="page">
+                <div class="contact-form">
+                    <h2 style="color: var(--dark-blue); margin-bottom: 1.5rem; text-align: center;">
+                        <i class="fas fa-envelope"></i> Contact Us
+                    </h2>
+                    <p style="text-align: center; margin-bottom: 2rem; color: #666;">
+                        Have questions or feedback? We'd love to hear from you!
+                    </p>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="required">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="required">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="required">Message</label>
+                            <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                    <p id="contact-result" style="text-align: center; margin-top: 1rem; font-weight: 600;"></p>
+                </div>
+            </section>
+            
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-lock"></i> Encryption Basics</h3>
+                    <p>Your comprehensive resource for understanding cryptography fundamentals and how encryption protects your digital life.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="#" data-page="home">Home</a>
+                    <a href="#" data-page="lessons">Lessons</a>
+                    <a href="#" data-page="progress">Progress</a>
+                    <a href="#" data-page="certificate">Certificate</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Topics Covered</h3>
+                    <p>Symmetrical Encryption (AES)</p>
+                    <p>Asymmetrical Encryption (RSA)</p>
+                    <p>Hybrid Encryption</p>
+                    <p>Key Exchange Protocols</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Encryption Basics. All rights reserved. | Educational purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Main JavaScript -->
+    <script src="app.js"></script>
+    
+    <!-- Back to Top Script -->
+    <script>
+        // Back to top button functionality
+        const backToTopBtn = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+        
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
