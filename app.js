@@ -11,8 +11,8 @@
                 
                 <div class="example-box">
                   <h4>The Two Approaches</h4>
-                  <p><strong>🔑 Symmetrical Encryption:</strong> Uses ONE key for both locking and unlocking</p>
-                  <p><strong>🔐 Asymmetrical Encryption:</strong> Uses TWO keys - one for locking, another for unlocking</p>
+                  <p><strong>Symmetrical Encryption:</strong> Uses ONE key for both locking and unlocking</p>
+                  <p><strong>Asymmetrical Encryption:</strong> Uses TWO keys - one for locking, another for unlocking</p>
                 </div>
                 
                 <p><strong>The Key Difference:</strong></p>
@@ -29,13 +29,13 @@
                   </tr>
                   <tr>
                     <td style="padding:8px; border:1px solid #ddd;"><strong>Speed</strong></td>
-                    <td style="padding:8px; border:1px solid #ddd;">Fast ⚡</td>
-                    <td style="padding:8px; border:1px solid #ddd;">Slower 🐢</td>
+                    <td style="padding:8px; border:1px solid #ddd;">Fast</td>
+                    <td style="padding:8px; border:1px solid #ddd;">Slower</td>
                   </tr>
                   <tr>
                     <td style="padding:8px; border:1px solid #ddd;"><strong>Key Distribution</strong></td>
-                    <td style="padding:8px; border:1px solid #ddd;">Difficult 😰</td>
-                    <td style="padding:8px; border:1px solid #ddd;">Easy 😊</td>
+                    <td style="padding:8px; border:1px solid #ddd;">Difficult</td>
+                    <td style="padding:8px; border:1px solid #ddd;">Easy </td>
                   </tr>
                 </table>
                 
@@ -90,7 +90,7 @@
                 </ul>
                 
                 <div class="example-box">
-                  <h4>✅ Advantages of Symmetrical Encryption</h4>
+                  <h4>Advantages of Symmetrical Encryption</h4>
                   <ul>
                     <li><strong>Speed:</strong> VERY fast - can encrypt gigabytes per second</li>
                     <li><strong>Efficiency:</strong> Less computationally intensive</li>
@@ -100,7 +100,7 @@
                 </div>
                 
                 <div class="example-box">
-                  <h4>❌ Disadvantages of Symmetrical Encryption</h4>
+                  <h4>Disadvantages of Symmetrical Encryption</h4>
                   <ul>
                     <li><strong>Key Distribution Problem:</strong> How do you securely share the key initially? Can't send it over insecure channel!</li>
                     <li><strong>Scalability:</strong> Need unique key for every pair (10 people = 45 different keys!)</li>
@@ -111,12 +111,12 @@
                 
                 <p><strong>Where Symmetrical Encryption is Used:</strong></p>
                 <ul>
-                  <li>🔒 <strong>Full disk encryption:</strong> BitLocker, FileVault (AES-256)</li>
-                  <li>📁 <strong>File encryption:</strong> Encrypting documents and archives</li>
-                  <li>🌐 <strong>VPNs:</strong> Securing tunnel traffic (AES-GCM)</li>
-                  <li>💬 <strong>Messaging:</strong> Signal uses AES-256 for message content</li>
-                  <li>🔐 <strong>HTTPS:</strong> After key exchange, AES encrypts the web traffic</li>
-                  <li>💾 <strong>Database encryption:</strong> Protecting stored data</li>
+                  <li><strong>Full disk encryption:</strong> BitLocker, FileVault (AES-256)</li>
+                  <li><strong>File encryption:</strong> Encrypting documents and archives</li>
+                  <li><strong>VPNs:</strong> Securing tunnel traffic (AES-GCM)</li>
+                  <li><strong>Messaging:</strong> Signal uses AES-256 for message content</li>
+                  <li><strong>HTTPS:</strong> After key exchange, AES encrypts the web traffic</li>
+                  <li><strong>Database encryption:</strong> Protecting stored data</li>
                 </ul>
                 
                 <p><strong>The Key Exchange Challenge:</strong> The biggest weakness of symmetrical encryption is: <em>How do Alice and Bob agree on the secret key without meeting in person?</em> This is where asymmetrical encryption comes to the rescue! 🦸</p>`,
@@ -148,7 +148,7 @@
                     <li><strong>Alice sends</strong> the encrypted message (safe even if intercepted)</li>
                     <li><strong>Bob decrypts</strong> with his private key (only he has it!)</li>
                   </ol>
-                  <p>✅ No need to share secrets beforehand!</p>
+                  <p>No need to share secrets beforehand!</p>
                 </div>
                 
                 <p><strong>Real-World Analogy:</strong> Bob has a mailbox in a public place. Anyone can put letters in the slot (public key = mail slot). But only Bob has the key to open the mailbox and read the letters (private key = mailbox key).</p>
@@ -163,7 +163,7 @@
                 </ul>
                 
                 <div class="example-box">
-                  <h4>✅ Advantages of Asymmetrical Encryption</h4>
+                  <h4>Advantages of Asymmetrical Encryption</h4>
                   <ul>
                     <li><strong>Solves Key Distribution:</strong> No need to share secrets beforehand!</li>
                     <li><strong>Scalability:</strong> Each person needs only ONE key pair (1000 people = 1000 key pairs, not millions!)</li>
@@ -174,7 +174,7 @@
                 </div>
                 
                 <div class="example-box">
-                  <h4>❌ Disadvantages of Asymmetrical Encryption</h4>
+                  <h4>Disadvantages of Asymmetrical Encryption</h4>
                   <ul>
                     <li><strong>Slow:</strong> 100-1000x slower than symmetrical encryption</li>
                     <li><strong>Computationally expensive:</strong> Requires lots of processing power</li>
@@ -186,12 +186,12 @@
                 
                 <p><strong>Where Asymmetrical Encryption is Used:</strong></p>
                 <ul>
-                  <li>🔐 <strong>SSL/TLS (HTTPS):</strong> Secure key exchange during handshake</li>
-                  <li>✍️ <strong>Digital Signatures:</strong> Email (S/MIME, PGP), code signing</li>
-                  <li>🪪 <strong>Certificates:</strong> X.509 certificates prove identity</li>
-                  <li>🔑 <strong>SSH:</strong> Secure remote login</li>
-                  <li>💰 <strong>Cryptocurrencies:</strong> Bitcoin, Ethereum use asymmetric signatures</li>
-                  <li>📧 <strong>Email Encryption:</strong> PGP/GPG for end-to-end email security</li>
+                  <li><strong>SSL/TLS (HTTPS):</strong> Secure key exchange during handshake</li>
+                  <li><strong>Digital Signatures:</strong> Email (S/MIME, PGP), code signing</li>
+                  <li><strong>Certificates:</strong> X.509 certificates prove identity</li>
+                  <li><strong>SSH:</strong> Secure remote login</li>
+                  <li><strong>Cryptocurrencies:</strong> Bitcoin, Ethereum use asymmetric signatures</li>
+                  <li><strong>Email Encryption:</strong> PGP/GPG for end-to-end email security</li>
                 </ul>
                 
                 <p><strong>Key Concept - Digital Signatures:</strong> Asymmetrical encryption can also work in reverse! If Bob encrypts with his PRIVATE key, anyone can decrypt with his PUBLIC key. This proves Bob sent it! This is how digital signatures work. 🖊️</p>`,
@@ -220,13 +220,13 @@
                   </tr>
                   <tr>
                     <td style="padding:8px; border:1px solid #ddd;"><strong>Key Distribution</strong></td>
-                    <td style="padding:8px; border:1px solid #ddd;">❌ Difficult - must share securely</td>
-                    <td style="padding:8px; border:1px solid #ddd;">✅ Easy - public key can be shared openly</td>
+                    <td style="padding:8px; border:1px solid #ddd;">Difficult - must share securely</td>
+                    <td style="padding:8px; border:1px solid #ddd;">Easy - public key can be shared openly</td>
                   </tr>
                   <tr>
                     <td style="padding:8px; border:1px solid #ddd;"><strong>Speed</strong></td>
-                    <td style="padding:8px; border:1px solid #ddd;">✅ Very fast (GB/sec)</td>
-                    <td style="padding:8px; border:1px solid #ddd;">❌ Slow (100-1000x slower)</td>
+                    <td style="padding:8px; border:1px solid #ddd;">Very fast (GB/sec)</td>
+                    <td style="padding:8px; border:1px solid #ddd;">Slow (100-1000x slower)</td>
                   </tr>
                   <tr>
                     <td style="padding:8px; border:1px solid #ddd;"><strong>Key Length</strong></td>
@@ -235,13 +235,13 @@
                   </tr>
                   <tr>
                     <td style="padding:8px; border:1px solid #ddd;"><strong>Scalability</strong></td>
-                    <td style="padding:8px; border:1px solid #ddd;">❌ Poor (n² keys for n users)</td>
-                    <td style="padding:8px; border:1px solid #ddd;">✅ Good (n key pairs for n users)</td>
+                    <td style="padding:8px; border:1px solid #ddd;">Poor (n² keys for n users)</td>
+                    <td style="padding:8px; border:1px solid #ddd;">Good (n key pairs for n users)</td>
                   </tr>
                   <tr>
                     <td style="padding:8px; border:1px solid #ddd;"><strong>Authentication</strong></td>
-                    <td style="padding:8px; border:1px solid #ddd;">❌ No built-in authentication</td>
-                    <td style="padding:8px; border:1px solid #ddd;">✅ Yes (digital signatures)</td>
+                    <td style="padding:8px; border:1px solid #ddd;">No built-in authentication</td>
+                    <td style="padding:8px; border:1px solid #ddd;">Yes (digital signatures)</td>
                   </tr>
                   <tr>
                     <td style="padding:8px; border:1px solid #ddd;"><strong>Best For</strong></td>
@@ -259,20 +259,20 @@
                   <h4>Use Case Decision Tree</h4>
                   <p><strong>Use Symmetrical When:</strong></p>
                   <ul>
-                    <li>📁 Encrypting files/databases (you control both encryption & decryption)</li>
-                    <li>💾 Full disk encryption (single user scenario)</li>
-                    <li>⚡ Need maximum speed</li>
-                    <li>🔐 Already have a secure way to share the key</li>
-                    <li>💬 Encrypting message content (after key exchange)</li>
+                    <li>Encrypting files/databases (you control both encryption & decryption)</li>
+                    <li>Full disk encryption (single user scenario)</li>
+                    <li>Need maximum speed</li>
+                    <li>Already have a secure way to share the key</li>
+                    <li>Encrypting message content (after key exchange)</li>
                   </ul>
                   
                   <p><strong>Use Asymmetrical When:</strong></p>
                   <ul>
-                    <li>🤝 No prior secure channel exists</li>
-                    <li>✍️ Need digital signatures</li>
-                    <li>🪪 Identity verification required</li>
-                    <li>🔑 Exchanging symmetrical keys</li>
-                    <li>📧 Email encryption (sender/receiver don't share secret)</li>
+                    <li>No prior secure channel exists</li>
+                    <li>Need digital signatures</li>
+                    <li>Identity verification required</li>
+                    <li>Exchanging symmetrical keys</li>
+                    <li>Email encryption (sender/receiver don't share secret)</li>
                   </ul>
                 </div>
                 
@@ -286,14 +286,14 @@
                   <h4>Real-World Example: Online Banking</h4>
                   <p><strong>When you access your bank:</strong></p>
                   <ol>
-                    <li>🔐 Bank sends its public key (asymmetrical)</li>
-                    <li>🔑 Your browser generates a random symmetrical key</li>
-                    <li>🔐 Browser encrypts that key using bank's public key (asymmetrical)</li>
-                    <li>📨 Sends encrypted symmetrical key to bank</li>
-                    <li>🔓 Bank decrypts with its private key (asymmetrical)</li>
-                    <li>⚡ All transaction data encrypted with symmetrical key (fast!)</li>
+                    <li>Bank sends its public key (asymmetrical)</li>
+                    <li>Your browser generates a random symmetrical key</li>
+                    <li>Browser encrypts that key using bank's public key (asymmetrical)</li>
+                    <li>Sends encrypted symmetrical key to bank</li>
+                    <li>Bank decrypts with its private key (asymmetrical)</li>
+                    <li>All transaction data encrypted with symmetrical key (fast!)</li>
                   </ol>
-                  <p>✅ Best of both worlds: Security of asymmetrical + Speed of symmetrical!</p>
+                  <p>Best of both worlds: Security of asymmetrical + Speed of symmetrical!</p>
                 </div>
                 
                 <p><strong>The Hybrid Approach:</strong> Modern systems almost ALWAYS use both types together. This is called "hybrid cryptography" and it's the standard approach in TLS/SSL, PGP, Signal, and virtually all secure communications.</p>`,
@@ -336,36 +336,36 @@
                   <h4>Block Cipher Modes</h4>
                   <p>To encrypt data longer than 16 bytes, we need a mode of operation:</p>
                   
-                  <p><strong>❌ ECB (Electronic Codebook):</strong> NEVER USE!</p>
+                  <p><strong> ECB (Electronic Codebook):</strong> NEVER USE!</p>
                   <ul><li>Each block encrypted independently</li><li>Same plaintext = same ciphertext (leaks patterns)</li><li>Famous example: Encrypted Tux penguin still shows penguin shape!</li></ul>
                   
-                  <p><strong>✅ CBC (Cipher Block Chaining):</strong> Classic mode</p>
+                  <p><strong> CBC (Cipher Block Chaining):</strong> Classic mode</p>
                   <ul><li>Each block XORed with previous ciphertext</li><li>Requires Initialization Vector (IV)</li><li>Sequential (can't parallelize)</li></ul>
                   
-                  <p><strong>✅ CTR (Counter):</strong> Stream cipher mode</p>
+                  <p><strong> CTR (Counter):</strong> Stream cipher mode</p>
                   <ul><li>Turns block cipher into stream cipher</li><li>Parallelizable (faster)</li><li>Random access to encrypted data</li></ul>
                   
-                  <p><strong>✅✅ GCM (Galois/Counter Mode):</strong> BEST CHOICE!</p>
+                  <p><strong> GCM (Galois/Counter Mode):</strong> BEST CHOICE!</p>
                   <ul><li>Encryption + authentication</li><li>Detects tampering</li><li>Very fast (parallelizable)</li><li>Standard in TLS 1.3, IPsec, SSH</li></ul>
                 </div>
                 
                 <p><strong>AES Security Status:</strong></p>
                 <ul>
-                  <li>✅ No practical attacks against properly implemented AES</li>
-                  <li>✅ Would take billions of years to brute force even with all world's computers</li>
-                  <li>✅ Even quantum computers can't break AES-256 efficiently (just use larger keys)</li>
-                  <li>⚠️ Implementation vulnerabilities still possible (side-channel attacks)</li>
+                  <li> No practical attacks against properly implemented AES</li>
+                  <li> Would take billions of years to brute force even with all world's computers</li>
+                  <li> Even quantum computers can't break AES-256 efficiently (just use larger keys)</li>
+                  <li> Implementation vulnerabilities still possible (side-channel attacks)</li>
                 </ul>
                 
                 <div class="example-box">
                   <h4>AES in the Real World</h4>
-                  <p>💾 <strong>Disk Encryption:</strong> BitLocker (Windows), FileVault (Mac), LUKS (Linux)</p>
-                  <p>📱 <strong>Mobile:</strong> iOS and Android encrypt all storage with AES-256</p>
-                  <p>🌐 <strong>Web:</strong> HTTPS uses AES-128-GCM or AES-256-GCM</p>
-                  <p>💬 <strong>Messaging:</strong> Signal, WhatsApp use AES-256</p>
-                  <p>☁️ <strong>Cloud:</strong> AWS, Google Cloud, Azure use AES-256 by default</p>
-                  <p>📡 <strong>WiFi:</strong> WPA2/WPA3 use AES-CCMP</p>
-                  <p>🎮 <strong>Gaming:</strong> PlayStation, Xbox encrypt game data with AES</p>
+                  <p> <strong>Disk Encryption:</strong> BitLocker (Windows), FileVault (Mac), LUKS (Linux)</p>
+                  <p> <strong>Mobile:</strong> iOS and Android encrypt all storage with AES-256</p>
+                  <p> <strong>Web:</strong> HTTPS uses AES-128-GCM or AES-256-GCM</p>
+                  <p> <strong>Messaging:</strong> Signal, WhatsApp use AES-256</p>
+                  <p> <strong>Cloud:</strong> AWS, Google Cloud, Azure use AES-256 by default</p>
+                  <p> <strong>WiFi:</strong> WPA2/WPA3 use AES-CCMP</p>
+                  <p> <strong>Gaming:</strong> PlayStation, Xbox encrypt game data with AES</p>
                 </div>
                 
                 <p><strong>Hardware Acceleration:</strong> Modern CPUs have AES-NI (AES New Instructions) that make AES incredibly fast - often over 1 GB/second on laptop processors! This is why AES is the default choice for symmetrical encryption.</p>`,
@@ -383,8 +383,8 @@
                 
                 <p><strong>The Mathematical Insight:</strong> RSA's security relies on a simple mathematical fact:</p>
                 <ul>
-                  <li>✅ <strong>Easy:</strong> Multiply two large prime numbers (17 × 19 = 323)</li>
-                  <li>❌ <strong>Hard:</strong> Factor the result back into primes (323 = ? × ?)</li>
+                  <li> <strong>Easy:</strong> Multiply two large prime numbers (17 × 19 = 323)</li>
+                  <li> <strong>Hard:</strong> Factor the result back into primes (323 = ? × ?)</li>
                 </ul>
                 <p>With 2048-bit numbers, factoring is practically impossible with current technology!</p>
                 
@@ -399,7 +399,7 @@
                     <li><strong>Public key:</strong> (n, e)</li>
                     <li><strong>Private key:</strong> (n, d)</li>
                   </ol>
-                  <p>The primes p and q are destroyed after key generation! 🔥</p>
+                  <p>The primes p and q are destroyed after key generation! </p>
                 </div>
                 
                 <p><strong>How RSA Encryption Works:</strong></p>
@@ -423,17 +423,17 @@
                   <p>Ciphertext = 2^7 mod 33 = 128 mod 33 = 29</p>
                   
                   <p><strong>Decryption:</strong></p>
-                  <p>Message = 29^3 mod 33 = 24389 mod 33 = 2 ✅</p>
+                  <p>Message = 29^3 mod 33 = 24389 mod 33 = 2 </p>
                   
                   <p><em>Real RSA uses 2048+ bit numbers!</em></p>
                 </div>
                 
                 <p><strong>RSA Key Sizes:</strong></p>
                 <ul>
-                  <li><strong>1024-bit:</strong> ❌ DEPRECATED - Can be broken by well-funded attackers</li>
-                  <li><strong>2048-bit:</strong> ✅ Current standard, secure until at least 2030</li>
-                  <li><strong>3072-bit:</strong> ✅ Long-term security (equivalent to AES-128)</li>
-                  <li><strong>4096-bit:</strong> ✅ Maximum security (equivalent to AES-256)</li>
+                  <li><strong>1024-bit:</strong>  DEPRECATED - Can be broken by well-funded attackers</li>
+                  <li><strong>2048-bit:</strong>  Current standard, secure until at least 2030</li>
+                  <li><strong>3072-bit:</strong>  Long-term security (equivalent to AES-128)</li>
+                  <li><strong>4096-bit:</strong>  Maximum security (equivalent to AES-256)</li>
                 </ul>
                 
                 <div class="example-box">
@@ -456,17 +456,17 @@
                       <td style="padding:8px; border:1px solid #ddd;">15360-bit</td>
                     </tr>
                   </table>
-                  <p>RSA needs much larger keys for equivalent security! 📏</p>
+                  <p>RSA needs much larger keys for equivalent security! </p>
                 </div>
                 
                 <p><strong>Common Uses of RSA:</strong></p>
                 <ul>
-                  <li>🔐 <strong>SSL/TLS:</strong> HTTPS key exchange during handshake</li>
-                  <li>✍️ <strong>Digital Signatures:</strong> Email (S/MIME), code signing, documents</li>
-                  <li>🔑 <strong>Key Exchange:</strong> Securely sharing symmetrical keys</li>
-                  <li>🪪 <strong>Certificates:</strong> X.509 certificates for identity</li>
-                  <li>📧 <strong>Email:</strong> PGP/GPG encryption</li>
-                  <li>🔒 <strong>SSH:</strong> Secure remote login</li>
+                  <li> <strong>SSL/TLS:</strong> HTTPS key exchange during handshake</li>
+                  <li> <strong>Digital Signatures:</strong> Email (S/MIME), code signing, documents</li>
+                  <li> <strong>Key Exchange:</strong> Securely sharing symmetrical keys</li>
+                  <li> <strong>Certificates:</strong> X.509 certificates for identity</li>
+                  <li> <strong>Email:</strong> PGP/GPG encryption</li>
+                  <li> <strong>SSH:</strong> Secure remote login</li>
                 </ul>
                 
                 <p><strong>Why RSA is Slow:</strong> RSA operations involve raising huge numbers to huge powers and taking modulos - very computationally expensive! Typical speeds:</p>
@@ -487,10 +487,10 @@
                 
                 <p><strong>RSA Security Concerns:</strong></p>
                 <ul>
-                  <li>⚠️ <strong>Quantum computers:</strong> Shor's algorithm can break RSA efficiently</li>
-                  <li>⚠️ <strong>Small keys:</strong> 1024-bit no longer secure</li>
-                  <li>⚠️ <strong>Implementation bugs:</strong> Side-channel attacks, timing attacks</li>
-                  <li>⚠️ <strong>Poor randomness:</strong> Weak random number generation = weak keys</li>
+                  <li> <strong>Quantum computers:</strong> Shor's algorithm can break RSA efficiently</li>
+                  <li> <strong>Small keys:</strong> 1024-bit no longer secure</li>
+                  <li> <strong>Implementation bugs:</strong> Side-channel attacks, timing attacks</li>
+                  <li> <strong>Poor randomness:</strong> Weak random number generation = weak keys</li>
                 </ul>
                 
                 <p><strong>The Future:</strong> RSA is being gradually replaced by ECC (Elliptic Curve Cryptography) which offers same security with much smaller keys. But RSA remains the most widely deployed asymmetrical algorithm today!</p>`,
@@ -521,7 +521,7 @@
                     <li><strong>Decrypt Key:</strong> Recipient uses private key to decrypt the symmetrical key</li>
                     <li><strong>Decrypt Data:</strong> Use symmetrical key to decrypt the actual data</li>
                   </ol>
-                  <p>✅ Fast encryption + Secure key exchange!</p>
+                  <p> Fast encryption + Secure key exchange!</p>
                 </div>
                 
                 <p><strong>Visual Example: Alice Sending Bob a Large File</strong></p>
@@ -540,15 +540,15 @@
                     <li>Decrypts 1GB file using <code>K_session</code> with AES → Fast! ⚡</li>
                   </ol>
                   
-                  <p>🎯 Result: Secure (asymmetrical) + Fast (symmetrical)!</p>
+                  <p> Result: Secure (asymmetrical) + Fast (symmetrical)!</p>
                 </div>
                 
                 <p><strong>Why This is Brilliant:</strong></p>
                 <ul>
-                  <li>✅ No pre-shared secrets needed (asymmetrical solves this)</li>
-                  <li>✅ Fast bulk encryption (symmetrical handles this)</li>
-                  <li>✅ Unique key per session (session key is random each time)</li>
-                  <li>✅ Perfect Forward Secrecy possible (destroy session keys)</li>
+                  <li> No pre-shared secrets needed (asymmetrical solves this)</li>
+                  <li> Fast bulk encryption (symmetrical handles this)</li>
+                  <li> Unique key per session (session key is random each time)</li>
+                  <li> Perfect Forward Secrecy possible (destroy session keys)</li>
                 </ul>
                 
                 <div class="example-box">
@@ -571,16 +571,16 @@
                     <li>Both sides have the same session key now</li>
                   </ul>
                   
-                  <p>🔒 That padlock icon means this hybrid system is working!</p>
+                  <p> That padlock icon means this hybrid system is working!</p>
                 </div>
                 
                 <p><strong>Other Systems Using Hybrid Encryption:</strong></p>
                 <ul>
-                  <li>📧 <strong>PGP/GPG Email:</strong> Encrypts email with AES, encrypts AES key with recipient's RSA public key</li>
-                  <li>💬 <strong>Signal Protocol:</strong> Uses both asymmetrical (X3DH) and symmetrical (AES-256) encryption</li>
-                  <li>🔐 <strong>OpenSSH:</strong> Key exchange via asymmetrical, session via symmetrical</li>
-                  <li>🌐 <strong>VPNs (IPsec):</strong> IKE uses asymmetrical, data tunnel uses AES</li>
-                  <li>💾 <strong>Encrypted Backups:</strong> File encryption with AES, key encrypted with RSA</li>
+                  <li> <strong>PGP/GPG Email:</strong> Encrypts email with AES, encrypts AES key with recipient's RSA public key</li>
+                  <li> <strong>Signal Protocol:</strong> Uses both asymmetrical (X3DH) and symmetrical (AES-256) encryption</li>
+                  <li> <strong>OpenSSH:</strong> Key exchange via asymmetrical, session via symmetrical</li>
+                  <li> <strong>VPNs (IPsec):</strong> IKE uses asymmetrical, data tunnel uses AES</li>
+                  <li> <strong>Encrypted Backups:</strong> File encryption with AES, key encrypted with RSA</li>
                 </ul>
                 
                 <div class="example-box">
@@ -592,15 +592,15 @@
                     </tr>
                     <tr>
                       <td style="padding:8px; border:1px solid #ddd;">Pure RSA-2048</td>
-                      <td style="padding:8px; border:1px solid #ddd;">~278 hours 😱</td>
+                      <td style="padding:8px; border:1px solid #ddd;">~278 hours </td>
                     </tr>
                     <tr>
                       <td style="padding:8px; border:1px solid #ddd;">Pure AES-256</td>
-                      <td style="padding:8px; border:1px solid #ddd;">~1 second ⚡</td>
+                      <td style="padding:8px; border:1px solid #ddd;">~1 second </td>
                     </tr>
                     <tr>
                       <td style="padding:8px; border:1px solid #ddd;"><strong>Hybrid (RSA + AES)</strong></td>
-                      <td style="padding:8px; border:1px solid #ddd;"><strong>~1 second ⚡</strong></td>
+                      <td style="padding:8px; border:1px solid #ddd;"><strong>~1 second </strong></td>
                     </tr>
                   </table>
                   <p>Hybrid encryption gives us the speed of AES with the security of RSA!</p>
@@ -621,9 +621,9 @@
                 
                 <p><strong>Three Solutions:</strong></p>
                 <ul>
-                  <li>❌ <strong>Pre-shared Keys:</strong> Meet in person, exchange keys (doesn't scale)</li>
-                  <li>✅ <strong>Asymmetrical Encryption:</strong> Use public-key crypto to share symmetrical keys</li>
-                  <li>✅ <strong>Key Exchange Protocols:</strong> Derive shared secret without sending it (Diffie-Hellman)</li>
+                  <li> <strong>Pre-shared Keys:</strong> Meet in person, exchange keys (doesn't scale)</li>
+                  <li> <strong>Asymmetrical Encryption:</strong> Use public-key crypto to share symmetrical keys</li>
+                  <li> <strong>Key Exchange Protocols:</strong> Derive shared secret without sending it (Diffie-Hellman)</li>
                 </ul>
                 
                 <div class="example-box">
@@ -637,7 +637,7 @@
                     <li>Bob decrypts <code>C</code> with his private key → gets <code>K</code></li>
                     <li>Both now have the same AES key!</li>
                   </ol>
-                  <p>✅ Simple and secure!</p>
+                  <p> Simple and secure!</p>
                 </div>
                 
                 <p><strong>Diffie-Hellman Key Exchange:</strong> A brilliant protocol that lets two parties derive a shared secret without ever sending it! Even if someone listens to the entire conversation, they can't figure out the shared secret.</p>
@@ -677,7 +677,7 @@
                   <ul>
                     <li>Alice computes: s = B^a mod p = (g^b)^a mod p</li>
                     <li>Bob computes: s = A^b mod p = (g^a)^b mod p</li>
-                    <li>Both get the same s! 🎯</li>
+                    <li>Both get the same s! </li>
                   </ul>
                   
                   <p>Attacker sees: p, g, A, B but can't compute s without knowing a or b!</p>
@@ -686,7 +686,7 @@
                 <p><strong>Why Diffie-Hellman is Secure:</strong> Breaking it requires solving the discrete logarithm problem - given g^a mod p, find a. With large enough numbers (2048+ bits), this is computationally infeasible.</p>
                 
                 <div class="example-box">
-                  <h4>⚠️ Critical Problem: Man-in-the-Middle Attack</h4>
+                  <h4> Critical Problem: Man-in-the-Middle Attack</h4>
                   <p>Basic Diffie-Hellman has NO authentication! Eve can intercept:</p>
                   <ol>
                     <li>Eve does DH with Alice (Alice thinks it's Bob)</li>
@@ -696,9 +696,9 @@
                   
                   <p><strong>Solutions:</strong></p>
                   <ul>
-                    <li>✅ <strong>Authenticated DH:</strong> Sign DH parameters with private keys</li>
-                    <li>✅ <strong>Certificates:</strong> Use PKI to verify identities</li>
-                    <li>✅ <strong>Pre-shared keys:</strong> Out-of-band authentication</li>
+                    <li> <strong>Authenticated DH:</strong> Sign DH parameters with private keys</li>
+                    <li> <strong>Certificates:</strong> Use PKI to verify identities</li>
+                    <li> <strong>Pre-shared keys:</strong> Out-of-band authentication</li>
                   </ul>
                 </div>
                 
@@ -713,19 +713,19 @@
                   <h4>Perfect Forward Secrecy (PFS)</h4>
                   <p><strong>Problem:</strong> If server's long-term private key is stolen, can attacker decrypt past traffic?</p>
                   <ul>
-                    <li>❌ <strong>Without PFS:</strong> Yes! All past sessions can be decrypted</li>
-                    <li>✅ <strong>With PFS:</strong> No! Each session used ephemeral (temporary) keys that were destroyed</li>
+                    <li> <strong>Without PFS:</strong> Yes! All past sessions can be decrypted</li>
+                    <li> <strong>With PFS:</strong> No! Each session used ephemeral (temporary) keys that were destroyed</li>
                   </ul>
                   <p>This is why modern protocols use DHE/ECDHE - new keys every session!</p>
                 </div>
                 
                 <p><strong>Key Distribution in Practice:</strong></p>
                 <ul>
-                  <li>🌐 <strong>TLS/HTTPS:</strong> ECDHE + certificates</li>
-                  <li>🔒 <strong>SSH:</strong> ECDH + public key authentication</li>
-                  <li>💬 <strong>Signal:</strong> X3DH (Extended Triple Diffie-Hellman)</li>
-                  <li>🔐 <strong>VPNs:</strong> IKE (Internet Key Exchange) protocol</li>
-                  <li>📧 <strong>PGP:</strong> RSA for key exchange</li>
+                  <li> <strong>TLS/HTTPS:</strong> ECDHE + certificates</li>
+                  <li> <strong>SSH:</strong> ECDH + public key authentication</li>
+                  <li> <strong>Signal:</strong> X3DH (Extended Triple Diffie-Hellman)</li>
+                  <li> <strong>VPNs:</strong> IKE (Internet Key Exchange) protocol</li>
+                  <li> <strong>PGP:</strong> RSA for key exchange</li>
                 </ul>`,
       quiz: [
         { q: 'Diffie-Hellman is used to:', options: ['Encrypt messages directly', 'Derive a shared secret', 'Create digital signatures'], a: 'Derive a shared secret' },
@@ -746,9 +746,9 @@
                   <p>Try every possible key until the right one is found.</p>
                   <p><strong>Defense:</strong> Use sufficiently long keys</p>
                   <ul>
-                    <li>56-bit DES: ❌ Broken in 1999 (took 22 hours)</li>
-                    <li>128-bit AES: ✅ 2^128 = 340 undecillion keys (safe for decades)</li>
-                    <li>256-bit AES: ✅ Even quantum computers can't break efficiently</li>
+                    <li>56-bit DES:  Broken in 1999 (took 22 hours)</li>
+                    <li>128-bit AES: 2^128 = 340 undecillion keys (safe for decades)</li>
+                    <li>256-bit AES: Even quantum computers can't break efficiently</li>
                   </ul>
                 </div>
                 
@@ -787,7 +787,7 @@
                   <ul>
                     <li>1024-bit RSA: Factored in lab conditions</li>
                     <li>2048-bit RSA: Still secure (would take millions of years)</li>
-                    <li>Quantum computers: Shor's algorithm can break RSA efficiently 😱</li>
+                    <li>Quantum computers: Shor's algorithm can break RSA efficiently </li>
                   </ul>
                   <p><strong>Defense:</strong> Use 2048+ bit keys, prepare for post-quantum crypto</p>
                 </div>
@@ -829,10 +829,10 @@
                   <h4>Side-Channel Attacks</h4>
                   <p>Exploit physical implementation, not the math:</p>
                   <ul>
-                    <li><strong>⏱️ Timing:</strong> Measure how long operations take (reveals key bits)</li>
-                    <li><strong>⚡ Power Analysis:</strong> Monitor power consumption patterns</li>
-                    <li><strong>🔊 Acoustic:</strong> Listen to CPU sounds/fan noise</li>
-                    <li><strong>📡 EM:</strong> Measure electromagnetic emissions</li>
+                    <li><strong> Timing:</strong> Measure how long operations take (reveals key bits)</li>
+                    <li><strong> Power Analysis:</strong> Monitor power consumption patterns</li>
+                    <li><strong> Acoustic:</strong> Listen to CPU sounds/fan noise</li>
+                    <li><strong> EM:</strong> Measure electromagnetic emissions</li>
                   </ul>
                   <p><strong>Defense:</strong> Constant-time implementations, masking, shielding</p>
                 </div>
@@ -851,10 +851,10 @@
                 
                 <p><strong>Social Engineering (Affects All Crypto):</strong></p>
                 <ul>
-                  <li>😱 Phishing for passwords/keys</li>
-                  <li>🔧 "Rubber-hose cryptanalysis" (coercion)</li>
-                  <li>🗑️ Dumpster diving for printed keys</li>
-                  <li>👀 Shoulder surfing passwords</li>
+                  <li> Phishing for passwords/keys</li>
+                  <li> "Rubber-hose cryptanalysis" (coercion)</li>
+                  <li> Dumpster diving for printed keys</li>
+                  <li> Shoulder surfing passwords</li>
                 </ul>
                 
                 <div class="example-box">
@@ -897,11 +897,11 @@
                 
                 <p><strong>The Golden Rules:</strong></p>
                 <ul>
-                  <li>🔐 Never roll your own crypto - use established libraries</li>
-                  <li>🔑 Protect keys better than the data itself</li>
-                  <li>🔄 Keep cryptographic software updated</li>
-                  <li>🎓 Educate users - they're often the weakest link</li>
-                  <li>🛡️ Defense in depth - don't rely on crypto alone</li>
+                  <li> Never roll your own crypto - use established libraries</li>
+                  <li> Protect keys better than the data itself</li>
+                  <li> Keep cryptographic software updated</li>
+                  <li> Educate users - they're often the weakest link</li>
+                  <li> Defense in depth - don't rely on crypto alone</li>
                 </ul>`,
       quiz: [
         { q: 'What makes brute force attacks impractical on AES-256?', options: ['Illegal to attempt', 'Too many possible keys', 'Keys change daily'], a: 'Too many possible keys' },
@@ -916,7 +916,7 @@
       content: `<p><strong>Symmetrical + Asymmetrical in Action:</strong> Every day, you rely on both types of encryption working together. Let's explore where and how they're used in the real world.</p>
                 
                 <div class="example-box">
-                  <h4>🌐 HTTPS/TLS - The Foundation of Web Security</h4>
+                  <h4> HTTPS/TLS - The Foundation of Web Security</h4>
                   <p><strong>When you visit https://example.com:</strong></p>
                   
                   <p><strong>Phase 1: Asymmetrical (Handshake)</strong></p>
@@ -934,11 +934,11 @@
                     <li>New session key for each connection (Perfect Forward Secrecy)</li>
                   </ul>
                   
-                  <p>🔒 The padlock icon means both are protecting you!</p>
+                  <p> The padlock icon means both are protecting you!</p>
                 </div>
                 
                 <div class="example-box">
-                  <h4>💬 Messaging Apps - End-to-End Encryption</h4>
+                  <h4> Messaging Apps - End-to-End Encryption</h4>
                   <p><strong>Signal, WhatsApp, iMessage:</strong></p>
                   
                   <p><strong>Asymmetrical Part:</strong></p>
@@ -955,11 +955,11 @@
                     <li>Even the service provider can't read messages!</li>
                   </ul>
                   
-                  <p>✅ Result: True end-to-end encryption</p>
+                  <p> Result: True end-to-end encryption</p>
                 </div>
                 
                 <div class="example-box">
-                  <h4>💾 Full Disk Encryption</h4>
+                  <h4> Full Disk Encryption</h4>
                   <p><strong>BitLocker (Windows), FileVault (macOS), LUKS (Linux):</strong></p>
                   
                   <p><strong>Primarily Symmetrical:</strong></p>
@@ -973,7 +973,7 @@
                 </div>
                 
                 <div class="example-box">
-                  <h4>📧 Email Encryption</h4>
+                  <h4> Email Encryption</h4>
                   <p><strong>PGP/GPG - Pretty Good Privacy:</strong></p>
                   
                   <p><strong>Sending Encrypted Email:</strong></p>
@@ -992,7 +992,7 @@
                     <li>Decrypt email body with AES key</li>
                   </ol>
                   
-                  <p>🎯 Hybrid encryption + authentication = secure email!</p>
+                  <p> Hybrid encryption + authentication = secure email!</p>
                 </div>
                 
                 <p><strong>More Real-World Uses:</strong></p>
@@ -1029,7 +1029,7 @@
                   </tr>
                 </table>
                 
-                <p><strong>🔮 The Future of Encryption:</strong></p>
+                <p><strong> The Future of Encryption:</strong></p>
                 
                 <div class="example-box">
                   <h4>Post-Quantum Cryptography</h4>
@@ -1037,8 +1037,8 @@
                   
                   <p><strong>Impact on Each Type:</strong></p>
                   <ul>
-                    <li>✅ <strong>Symmetrical (AES):</strong> Mostly safe! Just double key size (AES-256 → secure)</li>
-                    <li>❌ <strong>Asymmetrical (RSA/ECC):</strong> Completely broken by quantum computers!</li>
+                    <li> <strong>Symmetrical (AES):</strong> Mostly safe! Just double key size (AES-256 → secure)</li>
+                    <li> <strong>Asymmetrical (RSA/ECC):</strong> Completely broken by quantum computers!</li>
                   </ul>
                   
                   <p><strong>Solutions Being Developed:</strong></p>
@@ -1073,34 +1073,34 @@
                 
                 <p><strong>Best Practices for Users:</strong></p>
                 <ul>
-                  <li>✅ Always use HTTPS (check for padlock icon)</li>
-                  <li>✅ Enable full disk encryption (BitLocker, FileVault)</li>
-                  <li>✅ Use end-to-end encrypted messaging (Signal, WhatsApp)</li>
-                  <li>✅ Enable 2FA with authenticator apps</li>
-                  <li>✅ Use password manager with strong encryption</li>
-                  <li>✅ Keep all software updated (security patches)</li>
-                  <li>✅ Use VPN on public WiFi</li>
-                  <li>✅ Verify website certificates on sensitive sites</li>
-                  <li>✅ Understand what your apps encrypt (and what they don't!)</li>
+                  <li> Always use HTTPS (check for padlock icon)</li>
+                  <li> Enable full disk encryption (BitLocker, FileVault)</li>
+                  <li> Use end-to-end encrypted messaging (Signal, WhatsApp)</li>
+                  <li> Enable 2FA with authenticator apps</li>
+                  <li> Use password manager with strong encryption</li>
+                  <li> Keep all software updated (security patches)</li>
+                  <li> Use VPN on public WiFi</li>
+                  <li> Verify website certificates on sensitive sites</li>
+                  <li> Understand what your apps encrypt (and what they don't!)</li>
                 </ul>
                 
                 <div class="example-box">
                   <h4>The Big Picture</h4>
                   <p><strong>Why Both Types Matter:</strong></p>
                   <ul>
-                    <li>🔑 <strong>Symmetrical:</strong> Fast, efficient, perfect for bulk data</li>
-                    <li>🔐 <strong>Asymmetrical:</strong> Solves key distribution, enables authentication</li>
-                    <li>🤝 <strong>Together:</strong> Secure, scalable, practical encryption for everyone</li>
+                    <li> <strong>Symmetrical:</strong> Fast, efficient, perfect for bulk data</li>
+                    <li> <strong>Asymmetrical:</strong> Solves key distribution, enables authentication</li>
+                    <li> <strong>Together:</strong> Secure, scalable, practical encryption for everyone</li>
                   </ul>
                   
                   <p><strong>Encryption protects:</strong></p>
                   <ul>
-                    <li>💬 Freedom of speech and privacy</li>
-                    <li>🗳️ Democratic processes</li>
-                    <li>💰 Global financial system</li>
-                    <li>🏥 Medical privacy</li>
-                    <li>📰 Journalists and whistleblowers</li>
-                    <li>🔒 Human rights worldwide</li>
+                    <li> Freedom of speech and privacy</li>
+                    <li> Democratic processes</li>
+                    <li> Global financial system</li>
+                    <li> Medical privacy</li>
+                    <li> Journalists and whistleblowers</li>
+                    <li> Human rights worldwide</li>
                   </ul>
                   
                   <p><strong>Remember:</strong> Encryption is not about having something to hide - it's about protecting everything you value in the digital age. Understanding symmetrical and asymmetrical encryption empowers you to make informed security decisions! 🎓</p>
